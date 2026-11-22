@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="[Короткое описание портфолио: имя, специализация и ключевые проекты.]">
+  <meta name="theme-color" content="#04070d">
+  <title>[Ваше имя] — портфолио</title>
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="page-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Шапка -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand" href="#home" aria-label="Портфолио — на главную">
+          <span class="brand-mark">П</span>
+          <span class="brand-name">[ИМЯ]</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Подход</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+          </ul>
+          <a class="btn btn-primary nav-cta" href="#contact">
+            Обсудить проект
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Главный экран -->
+    <section class="hero" id="home">
+      <div class="hero-orbit" aria-hidden="true">
+        <span class="hero-orbit__ring hero-orbit__ring--1"></span>
+        <span class="hero-orbit__ring hero-orbit__ring--2"></span>
+        <span class="hero-orbit__ring hero-orbit__ring--3"></span>
+        <span class="hero-orbit__dot"></span>
+      </div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="eyebrow reveal">
+              <span class="status-dot" aria-hidden="true"></span>
+              [Статус: открыт к проектам]
+            </div>
+
+            <h1 class="hero-title reveal">
+              <span class="hero-title__hello">Привет, я <span class="text-gradient">[Ваше имя]</span>.</span>
+              <span class="hero-title__main">Создаю <span class="text-outline">цифровые</span> продукты.</span>
+            </h1>
+
+            <p class="hero-lead reveal">
+              [Коротко о себе: чем занимаетесь, какой опыт и какую пользу приносите клиентам.
+              Одно или два предложения — этого достаточно.]
+            </p>
+
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary btn-glow" href="#projects">
+                Смотреть проекты
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="btn btn-outline-light btn-ghost" href="#" data-placeholder-link
+                data-toast="Замените ссылку на своё резюме в файле index.html.">
+                Скачать резюме
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                  <path d="M8.5 2v9M5 8l3.5 3.5L12 8M3 14.5h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-socials reveal" aria-label="Социальные сети">
+              <span class="hero-socials__label">Я в сети</span>
+              <a href="#" data-placeholder-link data-toast="Добавьте ссылку на Telegram." aria-label="Telegram">TG</a>
+              <a href="#" data-placeholder-link data-toast="Добавьте ссылку на GitHub." aria-label="GitHub">GH</a>
+              <a href="#" data-placeholder-link data-toast="Добавьте ссылку на Behance." aria-label="Behance">BE</a>
+              <span class="hero-socials__line" aria-hidden="true"></span>
+            </div>
+
+            <div class="hero-stats reveal" aria-label="Ключевые цифры">
+              <div class="hero-stat">
+                <span class="hero-stat__value">[X]+</span>
+                <span class="hero-stat__label">лет опыта</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat__value">[XX]+</span>
+                <span class="hero-stat__label">проектов</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat__value">[XX]</span>
+                <span class="hero-stat__label">клиентов</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="hero-visual reveal" id="heroVisual">
+              <div class="hero-visual__glow" aria-hidden="true"></div>
+
+              <div class="preview-window">
+                <div class="preview-window__bar">
+                  <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="preview-window__url">preview.01</span>
+                  <span class="preview-window__menu" aria-hidden="true">•••</span>
+                </div>
+
+                <div class="preview-art" aria-hidden="true">
+                  <span class="preview-art__grid"></span>
+                  <span class="preview-art__orb"></span>
+                  <span class="preview-art__ring preview-art__ring--1"></span>
+                  <span class="preview-art__ring preview-art__ring--2"></span>
+                  <span class="preview-art__letter">П</span>
+                  <span class="preview-art__meta">FEATURED / 01</span>
+                  <span class="preview-art__corner">[ 01 — 06 ]</span>
+                </div>
+
+                <div class="preview-info">
+                  <span class="preview-info__category">[Категория проекта]</span>
+                  <h2 class="preview-info__title">[Название проекта]</h2>
+                  <p class="preview-info__text">[Одно предложение о проекте.]</p>
+                  <div class="preview-tags" aria-label="Технологии проекта">
+                    <span>[Тег]</span>
+                    <span>[Тег]</span>
+                    <span>[Тег]</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-note floating-note--top">
+                <span class="floating-note__icon" aria-hidden="true">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path d="M8.5 1.8l1.7 4.4 4.4 1.7-4.4 1.7-1.7 4.4-1.7-4.4L2.4 7.9l4.4-1.7L8.5 1.8Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span><strong>[Ваш стек]</strong><small>технологии и инструменты</small></span>
+              </div>
+
+              <div class="floating-note floating-note--bottom">
+                <span class="floating-note__pulse" aria-hidden="true"></span>
+                <span><strong>Открыт к работе</strong><small>[ваш статус]</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll reveal" aria-hidden="true">
+          <span class="hero-scroll__line"></span>
+          <span>Листайте вниз</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Бегущая строка -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Интерфейсы</span><i></i><span>Веб-разработка</span><i></i><span>Брендинг</span><i></i>
+        <span>Прототипы</span><i></i><span>Дизайн-системы</span><i></i><span>Поддержка</span><i></i>
+        <span>Интерфейсы</span><i></i><span>Веб-разработка</span><i></i><span>Брендинг</span><i></i>
+        <span>Прототипы</span><i></i><span>Дизайн-системы</span><i></i><span>Поддержка</span><i></i>
+      </div>
+    </div>
+
+    <!-- Проекты -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="row align-items-end g-4 section-heading">
+          <div class="col-lg-8">
+            <div class="eyebrow reveal"><span>01</span> / Проекты</div>
+            <h2 class="section-title reveal">Избранные <span class="text-gradient">работы</span>.</h2>
+          </div>
+          <div class="col-lg-4">
+            <p class="section-note reveal">
+              [Короткое описание подборки: какие задачи вы решаете и на что смотреть в первую очередь.]
+            </p>
+          </div>
+        </div>
+
+        <div class="project-toolbar reveal">
+          <div class="filter-group" role="group" aria-label="Фильтр проектов">
+            <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+            <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Сайты</button>
+            <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">Приложения</button>
+            <button class="filter-btn" type="button" data-filter="design" aria-pressed="false">Дизайн</button>
+          </div>
+          <p class="project-count" id="projectCount" aria-live="polite">06 проектов</p>
+        </div>
+
+        <div class="row g-4" id="projectGrid">
+          <!-- Карточка 01 -->
+          <div class="col-md-6 col-xl-4 project-item reveal" data-category="web">
+            <article class="project-card">
+              <div class="project-visual project-visual--browser" aria-hidden="true">
+                <span class="visual-grid"></span>
+                <div class="browser-mock">
+                  <div class="browser-mock__bar"><i></i><i></i><i></i><span></span></div>
+                  <div class="browser-mock__page">
+                    <div class="browser-mock__nav"><span></span><span></span><span></span><b></b></div>
+                    <div class="browser-mock__hero">
+                      <span class="mock-line mock-line--lg"></span>
+                      <span class="mock-line mock-line--md"></span>
+                      <span class="mock-line mock-line--sm"></span>
+                      <span class="mock-pill"></span>
+                    </div>
+                    <span class="browser-mock__orb"></span>
+                  </div>
+                </div>
+                <span class="visual-index">01</span>
+                <span class="project-arrow" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5 13L13 5M7 5h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>Веб-сайт</span><span>[2026]</span></div>
+                <h3><a href="#" data-placeholder-link data-toast="Добавьте ссылку на первый кейс.">[Название проекта]</a></h3>
+                <p>[Короткое описание проекта: задача, решение и результат.]</p>
+                <div class="project-tags"><span>[HTML]</span><span>[CSS]</span><span>[JS]</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Карточка 02 -->
+          <div class="col-md-6 col-xl-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-visual project-visual--app" aria-hidden="true">
+                <span class="visual-grid"></span>
+                <div class="phone-mock phone-mock--back">
+                  <span class="phone-mock__notch"></span>
+                  <span class="phone-line phone-line--lg"></span>
+                  <span class="phone-card"></span>
+                  <span class="phone-line phone-line--sm"></span>
+                  <span class="phone-line phone-line--xs"></span>
+                </div>
+                <div class="phone-mock phone-mock--front">
+                  <span class="phone-mock__notch"></span>
+                  <span class="phone-avatar"></span>
+                  <span class="phone-line phone-line--sm"></span>
+                  <span class="phone-line phone-line--xs"></span>
+                  <span class="phone-chart"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+                <span class="visual-index">02</span>
+                <span class="project-arrow" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5 13L13 5M7 5h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>Приложение</span><span>[2026]</span></div>
+                <h3><a href="#" data-placeholder-link data-toast="Добавьте ссылку на второй кейс.">[Название проекта]</a></h3>
+                <p>[Короткое описание проекта: задача, решение и результат.]</p>
+                <div class="project-tags"><span>[Bootstrap]</span><span>[JavaScript]</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Карточка 03 -->
+          <div class="col-md-6 col-xl-4 project-item reveal" data-category="design">
+            <article class="project-card">
+              <div class="project-visual project-visual--brand" aria-hidden="true">
+                <span class="visual-grid"></span>
+                <div class="brand-mock">
+                  <span class="brand-mock__label">BRAND / 03</span>
+                  <span class="brand-mock__letter">Aa</span>
+                  <span class="brand-mock__line"></span>
+                  <span class="brand-mock__palette"><i></i><i></i><i></i><i></i></span>
+                </div>
+                <span class="visual-index">03</span>
+                <span class="project-arrow" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5 13L13 5M7 5h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>Брендинг</span><span>[2025]</span></div>
+                <h3><a href="#" data-placeholder-link data-toast="Добавьте ссылку на третий кейс.">[Название проекта]</a></h3>
+                <p>[Короткое описание проекта: задача, решение и результат.]</p>
+                <div class="project-tags"><span>[Айдентика]</span><span>[UI-кит]</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Карточка 04 -->
+          <div class="col-md-6 col-xl-4 project-item reveal" data-category="web">
+            <article class="project-card">
+              <div class="project-visual project-visual--dashboard" aria-hidden="true">
+                <span class="visual-grid"></span>
+                <div class="dash-mock">
+                  <div class="dash-mock__top"><span></span><span></span><span></span></div>
+                  <div class="dash-mock__stats">
+                    <span><b></b><i></i></span><span><b></b><i></i></span><span><b></b><i></i></span>
+                  </div>
+                  <div class="dash-mock__chart">
+                    <span style="--h: 42%"></span><span style="--h: 66%"></span><span style="--h: 48%"></span>
+                    <span style="--h: 82%"></span><span style="--h: 58%"></span><span style="--h: 94%"></span>
+                    <span style="--h: 70%"></span>
+                  </div>
+                  <svg class="dash-mock__line" viewBox="0 0 240 70" preserveAspectRatio="none">
+                    <path d="M0 58 C28 54 34 28 64 35 S110 62 132 42 170 10 194 23 226 8 240 12" fill="none" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="visual-index">04</span>
+                <span class="project-arrow" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5 13L13 5M7 5h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>Веб-сервис</span><span>[2025]</span></div>
+                <h3><a href="#" data-placeholder-link data-toast="Добавьте ссылку на четвёртый кейс.">[Название проекта]</a></h3>
+                <p>[Короткое описание проекта: задача, решение и результат.]</p>
+                <div class="project-tags"><span>[Dashboard]</span><span>[Bootstrap]</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Карточка 05 -->
+          <div class="col-md-6 col-xl-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-visual project-visual--gallery" aria-hidden="true">
+                <span class="visual-grid"></span>
+                <div class="gallery-mock">
+                  <div class="gallery-mock__head"><span></span><span></span></div>
+                  <div class="gallery-mock__grid">
+                    <span class="g-tile g-tile--1"></span>
+                    <span class="g-tile g-tile--2"></span>
+                    <span class="g-tile g-tile--3"></span>
+                    <span class="g-tile g-tile--4"></span>
+                  </div>
+                </div>
+                <span class="visual-index">05</span>
+                <span class="project-arrow" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5 13L13 5M7 5h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>Приложение</span><span>[2025]</span></div>
+                <h3><a href="#" data-placeholder-link data-toast="Добавьте ссылку на пятый кейс.">[Название проекта]</a></h3>
+                <p>[Короткое описание проекта: задача, решение и результат.]</p>
+                <div class="project-tags"><span>[UI/UX]</span><span>[Прототип]</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Карточка 06 -->
+          <div class="col-md-6 col-xl-4 project-item reveal" data-category="design">
+            <article class="project-card">
+              <div class="project-visual project-visual--editorial" aria-hidden="true">
+                <span class="visual-grid"></span>
+                <div class="editorial-mock">
+                  <span class="editorial-mock__number">06</span>
+                  <span class="editorial-mock__kicker">EDITORIAL / DESIGN</span>
+                  <span class="editorial-mock__title">Aa</span>
+                  <span class="editorial-mock__lines"><i></i><i></i><i></i></span>
+                  <span class="editorial-mock__circle"></span>
+                </div>
+                <span class="visual-index">06</span>
+                <span class="project-arrow" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M5 13L13 5M7 5h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>Дизайн</span><span>[2024]</span></div>
+                <h3><a href="#" data-placeholder-link data-toast="Добавьте ссылку на шестой кейс.">[Название проекта]</a></h3>
+                <p>[Короткое описание проекта: задача, решение и результат.]</p>
+                <div class="project-tags"><span>[Вёрстка]</span><span>[Типографика]</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5 g-xl-6">
+          <div class="col-lg-5">
+            <div class="portrait-wrap reveal">
+              <div class="portrait-corner portrait-corner--tl" aria-hidden="true"></div>
+              <div class="portrait-corner portrait-corner--br" aria-hidden="true"></div>
+              <div class="portrait-frame">
+                <div class="portrait-placeholder">
+                  <span class="portrait-placeholder__grid" aria-hidden="true"></span>
+                  <span class="portrait-placeholder__halo" aria-hidden="true"></span>
+                  <span class="portrait-placeholder__label">[ФОТО]</span>
+                  <span class="portrait-placeholder__hint">Ваш портрет</span>
+                </div>
+              </div>
+              <div class="portrait-badge">
+                <strong>[X]+</strong>
+                <span>лет опыта</span>
+              </div>
+              <span class="portrait-caption">[Город / страна] · [2026]</span>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="eyebrow reveal"><span>02</span> / Обо мне</div>
+            <h2 class="section-title reveal">Код, дизайн и <span class="text-gradient">внимание к деталям</span>.</h2>
+
+            <div class="about-copy reveal">
+              <p>
+                [Расскажите о себе: как пришли в профессию, что вам нравится в работе и какой подход
+                используете в проектах. Здесь можно написать 2–3 предложения.]
+              </p>
+              <p class="mb-0">
+                [Добавьте второй абзац: с какими командами или клиентами работаете, что для вас важно
+                в результате и почему с вами стоит сотрудничать.]
+              </p>
+            </div>
+
+            <dl class="about-facts reveal">
+              <div>
+                <dt>Опыт</dt>
+                <dd>[X лет]</dd>
+              </div>
+              <div>
+                <dt>Локация</dt>
+                <dd>[Город]</dd>
+              </div>
+              <div>
+                <dt>Формат</dt>
+                <dd>[Удалённо]</dd>
+              </div>
+              <div>
+                <dt>Языки</dt>
+                <dd>[RU / EN]</dd>
+              </div>
+            </dl>
+
+            <div class="about-actions reveal">
+              <a class="btn btn-primary btn-glow" href="#" data-placeholder-link
+                data-toast="Замените ссылку на своё резюме в файле index.html.">
+                Скачать резюме
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                  <path d="M8.5 2v9M5 8l3.5 3.5L12 8M3 14.5h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="text-link" href="#contact">
+                Написать мне
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подход / услуги -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="row align-items-end g-4 section-heading">
+          <div class="col-lg-8">
+            <div class="eyebrow reveal"><span>03</span> / Подход</div>
+            <h2 class="section-title reveal">Что я <span class="text-gradient">делаю</span>.</h2>
+          </div>
+          <div class="col-lg-4">
+            <p class="section-note reveal">
+              [Опишите, с какими запросами к вам можно прийти и как строится работа.]
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100">
+              <div class="service-card__top">
+                <span class="service-icon" aria-hidden="true">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 20l1.2-4.4L16.3 4.5a2.1 2.1 0 013 3L8.2 18.6 4 20Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M14.8 6l3 3M5.4 15.2l3 3" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </span>
+                <span class="service-number">01</span>
+              </div>
+              <h3>Дизайн</h3>
+              <p>[Опишите услугу: исследование, прототипы, интерфейсы и что получает клиент.]</p>
+              <div class="service-tags"><span>[UI/UX]</span><span>[Figma]</span><span>[Прототипы]</span></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100 service-card--featured">
+              <div class="service-card__top">
+                <span class="service-icon" aria-hidden="true">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.5 7L3.5 12l5 5M15.5 7l5 5-5 5M13.5 4l-3 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="service-number">02</span>
+              </div>
+              <h3>Разработка</h3>
+              <p>[Опишите услугу: адаптивная вёрстка, интерактив, интеграции и техническая часть.]</p>
+              <div class="service-tags"><span>[HTML/CSS]</span><span>[JavaScript]</span><span>[Bootstrap]</span></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100">
+              <div class="service-card__top">
+                <span class="service-icon" aria-hidden="true">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2.8l2.5 6.7 6.7 2.5-6.7 2.5-2.5 6.7-2.5-6.7L3 12l6.7-2.5L12 2.8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="service-number">03</span>
+              </div>
+              <h3>Поддержка</h3>
+              <p>[Опишите услугу: развитие проекта, правки, оптимизация и сопровождение после запуска.]</p>
+              <div class="service-tags"><span>[Оптимизация]</span><span>[SEO]</span><span>[Поддержка]</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-shell reveal">
+          <span class="contact-shell__glow" aria-hidden="true"></span>
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+              <div class="eyebrow"><span>04</span> / Контакты</div>
+              <h2 class="contact-title">Есть идея?<br><span class="text-gradient">Давайте обсудим.</span></h2>
+              <p class="contact-lead">
+                [Напишите, что вы открыты к новым проектам и как удобнее связаться.
+                Обычно отвечаете в течение 1–2 дней.]
+              </p>
+
+              <a class="contact-email" href="mailto:you@example.com">
+                <span>[you@example.com]</span>
+                <span class="contact-email__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M4 14L14 4M6 4h8v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+
+              <div class="contact-socials" aria-label="Социальные сети">
+                <a href="#" data-placeholder-link data-toast="Добавьте ссылку на Telegram.">Telegram</a>
+                <a href="#" data-placeholder-link data-toast="Добавьте ссылку на GitHub.">GitHub</a>
+                <a href="#" data-placeholder-link data-toast="Добавьте ссылку на Behance.">Behance</a>
+              </div>
+
+              <div class="contact-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                [Сейчас доступен для новых проектов]
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="nameInput">Имя</label>
+                    <input class="form-control" id="nameInput" name="name" type="text" placeholder="[Ваше имя]" autocomplete="name" required>
+                    <div class="invalid-feedback">Пожалуйста, укажите имя.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="emailInput">Email</label>
+                    <input class="form-control" id="emailInput" name="email" type="email" placeholder="[name@example.com]" autocomplete="email" required>
+                    <div class="invalid-feedback">Укажите корректный email.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="messageInput">Сообщение</label>
+                    <textarea class="form-control" id="messageInput" name="message" rows="5"
+                      placeholder="[Расскажите о проекте: задача, сроки, ориентировочный бюджет.]" required></textarea>
+                    <div class="invalid-feedback">Напишите пару слов о проекте.</div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary btn-glow contact-submit" type="submit">
+                      Отправить заявку
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                        <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <p class="form-note">Форма-заглушка. Для реальной отправки подключите backend или сервис форм.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <a class="navbar-brand" href="#home" aria-label="Портфолио — на главную">
+          <span class="brand-mark">П</span>
+          <span class="brand-name">[ИМЯ]</span>
+        </a>
+        <p class="footer-note">[Короткий слоган или специализация]</p>
+        <nav class="footer-nav" aria-label="Навигация в подвале">
+          <a href="#projects">Проекты</a>
+          <a href="#about">Обо мне</a>
+          <a href="#services">Подход</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear">2026</span> [Ваше имя]</span>
+        <span class="footer-stack">HTML · CSS · JavaScript · Bootstrap</span>
+        <a class="footer-up" href="#home">
+          Наверх
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+            <path d="M7.5 12V3M3.5 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Вернуться наверх">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+      <path d="M9 14V4M4.5 8.5L9 4l4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast site-toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-body">
+        <span class="toast-dot" aria-hidden="true"></span>
+        <span id="toastMessage">Готово.</span>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

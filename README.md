@@ -11,8 +11,8 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.7-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 ![No build step](https://img.shields.io/badge/build-not_required-2F7CFF?style=flat-square)
 
-**Демо:** `https://<username>.github.io/<repository>/`  
-_Добавьте ссылку после публикации на GitHub Pages._
+**Демо:** `https://lecarstvo-wd.github.io/Portfolio_sample/`  
+
 
 </div>
 
